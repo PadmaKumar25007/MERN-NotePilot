@@ -2,7 +2,7 @@ import express from 'express'
 import dotenv from "dotenv"
 import cors from 'cors'
 import notesRoutes from './routes/notesRoute.js'
-import { connectDB } from './config/DB.js'
+import { connectDB } from './config/db.js'
 import rateLimiter from './middleware/rateLimiter.js'
 import path from "path"
 
