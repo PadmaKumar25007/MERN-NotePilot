@@ -7,6 +7,7 @@ import rateLimiter from './middleware/rateLimiter.js'
 import path from "path"
 
 const app = express()
+const PORT = process.env.PORT || 5001
 const __dirname = path.resolve()
 
 dotenv.config()
@@ -31,7 +32,7 @@ if(process.env.NODE_ENV === "production"){
   })
 }
 
-connectDB().then( () => {app.listen(5001,()=>{
-    console.log("Server is running on port : 5001")
+connectDB().then( () => {app.listen(PORT,()=>{
+    console.log("Server is running on port : PORT")
   })
 })
