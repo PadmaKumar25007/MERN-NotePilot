@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import api from '../lib/axios.js'
 import toast from "react-hot-toast"
 import { ArrowLeftIcon, LoaderIcon, Trash2Icon} from "lucide-react"
+
 const NoteDetailPage = () => {
   const [note,setNote] = useState(null)
   const [loading,setLoading] = useState(true)
